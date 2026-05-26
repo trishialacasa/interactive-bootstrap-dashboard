@@ -1,0 +1,40 @@
+:root {
+  --bs-primary: #e85d04; 
+  --bs-primary-rgb: 232, 93, 4;
+}
+
+body {
+  background: #fff7ed; 
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #e85d04, #f48c06) !important;
+}
+
+.product-card {
+  border-radius: 18px;
+  border: none;
+  background: #ffffff;
+}
+
+.feedback-card {
+  border-radius: 14px;
+  border: 1px solid #ffe0c2;
+  transition: 0.3s;
+}
+
+.feedback-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(232, 93, 4, 0.2);
+}
+
+.btn-primary {
+  background-color: #e85d04;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #c94c04;
+}
+

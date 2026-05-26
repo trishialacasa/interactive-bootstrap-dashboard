@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trishia's Ilocos Empanada Feedback</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Ilocos Empanada</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container text-center py-5">
+  <h1 class="fw-bold">Ilocos Empanada Feedback</h1>
+  <p class="text-muted">Share your experience about our famous Ilocos Empanada</p>
+
+  <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+    Give Feedback
+  </button>
+</div>
+
+<div class="container pb-4">
+  <div class="card product-card shadow-sm">
+    <div class="card-body text-center">
+      <img src="images/empanada.jpg" class="img-fluid rounded mb-3" alt="Ilocos Empanada">
+      <h3>Ilocos Empanada</h3>
+      <p class="text-muted">
+        Crispy orange shell filled with savory meat, vegetables, and egg — a famous Ilocano street food.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-5">
+  <h4 class="mb-3">Customer Feedback</h4>
+
+  <div class="row g-3">
+
+    <div class="col-md-4">
+      <div class="card feedback-card">
+        <div class="card-body">
+          <h6>Ivana Alawi</h6>
+          <p>Super sarap! Crispylicious empanada with the best suka in the world.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card feedback-card">
+        <div class="card-body">
+          <h6>Juan Dela Cruz</h6>
+          <p>Balik-balik ako dito. Hindi ako nagsisi na bumili dito.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card feedback-card">
+        <div class="card-body">
+          <h6>Anne Curtis</h6>
+          <p>Authentic Ilocos taste. Highly recommended! Will buy two more again soon.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="feedbackModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title">Submit Feedback</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form class="needs-validation" novalidate>
+
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" required>
+            <div class="invalid-feedback">Name is required.</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" required>
+            <div class="invalid-feedback">Valid email required.</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Feedback</label>
+            <textarea class="form-control" minlength="20" required></textarea>
+            <div class="invalid-feedback">Minimum 20 characters required.</div>
+          </div>
+
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button class="btn btn-primary" id="submitBtn">Submit</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
